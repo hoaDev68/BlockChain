@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Content-Security-Policy"
-            content="script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net">
-        <title>User Form</title>
-        <link rel="stylesheet" href="./css/user_form.css">
-    </head>
-    <body>
-        <div class="container">
-            <h2>User Form</h2>
-            <label for="userName">Name</label>
-            <input id="userName" type="text" placeholder="Enter user name" />
-            <label for="userHealth">Age</label>
-            <input id="userHealth" type="number"
-                placeholder="Enter age value" />
-            <label for="userStrength">Address</label>
-            <input id="userStrength" type="text"
-                placeholder="Enter address value" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net">
+    <title>Add User Form</title>
+    <link rel="stylesheet" href="./css/user_form.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form_area">
+            <p class="title"> Add User Form</p>
+            <div class="form_group">
+                <label class="sub_title" for="userName">Name</label>
+                <input placeholder="Enter user name" class="form_style" id="userName" type="text">
+            </div>
+            <div class="form_group">
+                <label class="sub_title" for="userHealth">Age</label>
+                <input placeholder="Enter age value" id="userHealth" class="form_style" type="number">
+            </div>
+            <div class="form_group">
+                <label class="sub_title" for="userStrength">Address</label>
+                <input placeholder="Enter your password" id="userStrength" class="form_style" type="text">
+            </div>
             <div class="buttons">
                 <button id="cancel">Cancel</button>
-                <button id="save">Save</button>
+                <button id="save" class="save">Save</button>
             </div>
         </div>
-        <script
-            src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
-        <script src="./js/user_form.js"></script>
-    </body>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="./js/user_form.js"></script>
+</body>
+
 </html>
