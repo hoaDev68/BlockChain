@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy"
+            content="script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net">
+        <title>User Form</title>
+        <link rel="stylesheet" href="./css/user_form.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>User Form</h2>
+            <label for="userName">Name</label>
+            <input id="userName" type="text" placeholder="Enter user name" />
+            <label for="userHealth">Age</label>
+            <input id="userHealth" type="number"
+                placeholder="Enter age value" />
+            <label for="userStrength">Address</label>
+            <input id="userStrength" type="text"
+                placeholder="Enter address value" />
+            <div class="buttons">
+                <button id="cancel">Cancel</button>
+                <button id="save">Save</button>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+        <script src="./js/user_form.js"></script>
+    </body>
+</html>

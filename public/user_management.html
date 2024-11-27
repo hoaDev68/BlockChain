@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <link rel="stylesheet" href="./css/user_management.css">
+</head>
+<body>
+  <div class="menu-box">
+    <button id="walletAddress" class="menu-button">Wallet Address</button>
+    <button id="disconnectWallet" class="menu-button">Disconnect</button>
+  </div>
+  <div class="container">
+    <h1>User Management</h1>
+    <button id="addUser" class="action-button">Add User</button>
+    <div id="toast" class="toast"></div>
+    <div id="userList" class="user-list"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script src="./js/user_management.js"></script>
+</body>
+</html>
